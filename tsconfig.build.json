@@ -1,0 +1,14 @@
+{
+    "files": [],
+    "references": [
+        {
+            "path": "packages/bem"
+        },
+        {
+            "path": "packages/example"
+        },
+        {
+            "path": "packages/eslint-config"
+        }
+    ]
+}

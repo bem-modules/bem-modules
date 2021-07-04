@@ -1,0 +1,19 @@
+{
+    "name": "@bem-modules/example",
+    "private": true,
+    "version": "0.0.1",
+    "description": "BEM modules use example",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "keywords": [],
+    "author": "Philip Polkovnikov",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "14.11.8",
+        "@bem-modules/bem": "0.0.1"
+    },
+    "devDependencies": {
+        "typescript": "4.3.5",
+        "@bem-modules/eslint-config": "0.0.1"
+    }
+}

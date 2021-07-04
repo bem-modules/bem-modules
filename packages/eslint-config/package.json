@@ -1,0 +1,26 @@
+{
+    "name": "@bem-modules/eslint-config",
+    "private": true,
+    "version": "0.0.1",
+    "description": "Local eslint/prettier config for monorepo projects",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "keywords": [],
+    "author": "Philip Polkovnikov",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/eslint": "7.2.13",
+        "@types/prettier": "2.3.1",
+        "eslint": "7.29.0",
+        "prettier": "2.3.2",
+        "typescript": "4.3.5"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "4.28.1",
+        "@typescript-eslint/parser": "4.28.1",
+        "eslint": "7.29.0",
+        "eslint-config-prettier": "8.3.0",
+        "eslint-plugin-prettier": "3.4.0",
+        "prettier": "2.3.2"
+    }
+}

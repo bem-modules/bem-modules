@@ -1,0 +1,59 @@
+{
+	"folders": [
+		{
+			"path": "packages/bem"
+		},
+		{
+			"path": "packages/example"
+		},
+		{
+			"path": "packages/eslint-config"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		},
+		"editor.formatOnSave": true,
+		"eslint.workingDirectories": [
+			{
+				"mode": "auto"
+			}
+		],
+		"eslint.alwaysShowStatus": true,
+		"eslint.format.enable": true,
+		"files.eol": "\n",
+		"[javascript]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[typescriptreact]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"[typescript]": {
+			"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+		},
+		"files.exclude": {
+			"node_modules/": true,
+			// "lib/": true,
+			".eslintrc": true,
+			".npmrc": true,
+			"package-lock.json": true,
+			"*.tsbuildinfo": true,
+			// "tsconfig.json": true,
+		},
+		"files.autoGuessEncoding": true,
+		"typescript.tsdk": "..\\node_modules\\typescript\\lib",
+	},
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"Orta.vscode-jest"
+		]
+	}
+}
