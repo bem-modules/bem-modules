@@ -2,10 +2,26 @@
     "name": "@bem-modules/bem",
     "version": "0.0.1",
     "description": "BEM class name generator",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "keywords": [],
-    "author": "Philip Polkovnikov",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "keywords": [
+        "bem",
+        "css",
+        "css-modules",
+        "typescript",
+        "webpack",
+        "webpack-loader"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bem-modules/bem-modules.git",
+        "directory": "packages/bem"
+    },
+    "bugs": {
+        "url": "https://github.com/bem-modules/bem-modules/issues"
+    },
+    "homepage": "https://github.com/bem-modules/bem-modules#readme",
+    "author": "Philip Polkovnikov <polkovnikov.ph@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "@bem-modules/eslint-config": "0.0.1",
