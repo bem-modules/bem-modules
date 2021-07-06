@@ -10,7 +10,7 @@ npm i @bem-modules/bem TODO
 
 ## Example
 
-Full example project [here](/tree/main/packages/example).
+Full example project [here](/tree/master/packages/example).
 
 test.css:
 
@@ -56,7 +56,3 @@ TODO
 ## Documentation
 
 TODO
-
-## License
-
-The MIT License (MIT)
