@@ -26,6 +26,12 @@ describe('bem helper correctly transforms', () => {
         const b = bem('block');
         expect(b({foo: 'bar'})).toBe('block _foo_bar');
     });
+    it('element with camelcased modifier', () => {
+        const b = bem('block');
+        expect(b('element', {camelCase: true})).toBe(
+            'block__element _camel-case',
+        );
+    });
     it('element with boolean modifier true', () => {
         const b = bem('block');
         expect(b('element', {bool: true})).toBe('block__element _bool');
@@ -33,12 +39,6 @@ describe('bem helper correctly transforms', () => {
     it('element with boolean modifier false', () => {
         const b = bem('block');
         expect(b('element', {bool: false})).toBe('block__element');
-    });
-    it('element with camelcased modifier', () => {
-        const b = bem('block');
-        expect(b('element', {camelCase: true})).toBe(
-            'block__element _camel-case',
-        );
     });
     it('element with string modifier', () => {
         const b = bem('block');

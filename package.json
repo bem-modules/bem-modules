@@ -10,7 +10,8 @@
         "validate": "npm run validate-types && npm run validate-style && npm run validate-test",
         "validate-types": "tsc -b tsconfig.build.json",
         "validate-style": "eslint \"packages/*/src/**/*.{ts,tsx}\" --fix",
-        "validate-test": "jest"
+        "validate-test": "jest",
+        "lint-staged": "lint-staged"
     },
     "devDependencies": {
         "husky": "7.0.0",
@@ -23,11 +24,6 @@
         "packages/eslint-config",
         "packages/*"
     ],
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
     "lint-staged": {
         "*.{js,ts,tsx}": [
             "npm run validate"
