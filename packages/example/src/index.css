@@ -1,0 +1,25 @@
+.block {
+    display: flex;
+}
+
+.block__element {
+    flex: 0 0 auto;
+}
+
+.block__element._color_orange {
+    background-color: #f60;
+}
+
+.block__element._color_blue {
+    background-color: #08f;
+}
+
+.block__element._bool {
+    border: 1px solid #000;
+}
+
+.block__element2 {
+}
+
+.block2 {
+}

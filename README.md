@@ -47,6 +47,20 @@ const element2 = b('element', {
 const element3 = b('bar');
 ```
 
+tsconfig.json:
+
+```json
+{
+    "compilerOptions": {
+        "plugins": [
+            {
+                "name": "@bem-modules/ts-plugin"
+            }
+        ]
+    }
+}
+```
+
 webpack.config.ts:
 
 ```ts

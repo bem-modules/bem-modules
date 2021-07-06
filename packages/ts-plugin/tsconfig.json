@@ -2,12 +2,7 @@
     "extends": "../../tsconfig.json",
     "compilerOptions": {
         "rootDir": "src",
-        "outDir": "lib",
-        "plugins": [
-            {
-                "name": "@bem-modules/ts-plugin"
-            }
-        ]
+        "outDir": "lib"
     },
     "include": [
         "src/**/*"

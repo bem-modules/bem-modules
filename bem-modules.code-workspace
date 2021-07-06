@@ -1,15 +1,23 @@
 {
 	"folders": [
 		{
-			"path": "packages/bem"
+			"name": "bem",
+			"path": "packages\\bem"
 		},
 		{
-			"path": "packages/example"
+			"name": "example",
+			"path": "packages\\example"
 		},
 		{
-			"path": "packages/eslint-config"
+			"name": "eslint-config",
+			"path": "packages\\eslint-config"
 		},
 		{
+			"name": "ts-plugin",
+			"path": "packages\\ts-plugin"
+		},
+		{
+			"name": "<root>",
 			"path": "."
 		}
 	],
