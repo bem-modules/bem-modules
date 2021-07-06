@@ -6,14 +6,19 @@
         "develop": "tsc -b tsconfig.build.json --watch",
         "deploy": "echo check_git && npm run compile && echo push_npm",
         "compile": "tsc -b tsconfig.build.json",
-        "clean": "rimraf \"packages/**/lib\" \"packages/**/*.tsbuildinfo\"",
+        "clean": "rimraf \"packages/**/lib\" \"packages/**/*.tsbuildinfo\" \"packages/**/node_modules\" \"node_modules\" \"*.tsbuildinfo\"",
         "validate": "npm run validate-types && npm run validate-style && npm run validate-test",
         "validate-types": "tsc -b tsconfig.build.json",
         "validate-style": "eslint \"packages/*/src/**/*.{ts,tsx}\" --fix",
-        "validate-test": "jest",
-        "lint-staged": "lint-staged"
+        "validate-test": "jest"
     },
     "devDependencies": {
+        "@commitlint/cli": "12.1.4",
+        "@commitlint/config-conventional": "12.1.4",
+        "@commitlint/types": "12.1.4",
+        "@types/parse-json": "4.0.0",
+        "commitizen": "4.2.4",
+        "cz-conventional-changelog": "3.2.0",
         "husky": "7.0.0",
         "lint-staged": "11.0.0",
         "prettier": "2.3.1",
@@ -26,7 +31,12 @@
     ],
     "lint-staged": {
         "*.{js,ts,tsx}": [
-            "npm run validate"
+            "echo TODO"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
