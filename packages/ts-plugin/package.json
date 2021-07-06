@@ -1,6 +1,6 @@
 {
     "name": "@bem-modules/ts-plugin",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "TypeScript language plugin for BEM modules",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
