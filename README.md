@@ -89,3 +89,38 @@ const element3 = b('bar');
     ],
 }
 ```
+
+## Development
+
+```sh
+# checkout
+git clone git@github.com:bem-modules/bem-modules.git
+lerna bootstrap
+
+# start development
+npm run develop
+code
+
+# manually trigger typecheck, lint and test
+npm run validate
+
+# commit new changes
+git status
+git add -A
+npm run commit
+
+# clean all dependencies and cache files
+# (when package.json or tsconfig.json changed)
+npm run clean
+
+# create new version
+npm run version
+
+# manually validate package before publishing
+# (if changes to build process were made)
+cd packages/<name>
+npm pack
+
+# publish to npm
+npm run publish
+```
