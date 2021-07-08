@@ -1,7 +1,7 @@
 {
     "name": "@bem-modules/eslint-config",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Local eslint/prettier config for monorepo projects",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -17,6 +17,6 @@
         "prettier": "2.3.2"
     },
     "devDependencies": {
-        "@bem-modules/eslint-config": "^0.1.0"
+        "@bem-modules/eslint-config": "^0.1.2"
     }
 }
