@@ -5,14 +5,21 @@ CSS modules for BEM with type checking and minification.
 ## Installation
 
 ```sh
-npm i @bem-modules/bem TODO
+# Runtime
+npm i @bem-modules/bem
+
+# Webpack loader
+npm i --save-dev @bem-modules/loader
+
+# TypeScript plugin
+npm i --save-dev @bem/ts-plugin
 ```
 
-## Example
+## Usage
 
-Full example project [here](/tree/master/packages/example).
+Full example project [here](https://github.com/bem-modules/bem-modules/tree/master/packages/example).
 
-test.css:
+`test.css`:
 
 ```css
 .block { /* ... */ }
@@ -22,7 +29,7 @@ test.css:
 .block__element._option_b { /* ... */ }
 ```
 
-test.ts:
+`test.ts`:
 
 ```ts
 import {bem} from './test.css';
@@ -47,7 +54,7 @@ const element2 = b('element', {
 const element3 = b('bar');
 ```
 
-tsconfig.json:
+`tsconfig.json`:
 
 ```json
 {
@@ -61,12 +68,24 @@ tsconfig.json:
 }
 ```
 
-webpack.config.ts:
+`webpack.config.ts`:
 
 ```ts
-TODO
+{
+    test: /\.bem\.css$/,
+    use: [
+        {
+            loader: '@bem-modules/loader',
+        },
+        {
+            loader: MiniCssExtractPlugin.loader,
+        },
+        {
+            loader: 'css-loader',
+            options: {
+                importLoaders: 2,
+            },
+        },
+    ],
+}
 ```
-
-## Documentation
-
-TODO
