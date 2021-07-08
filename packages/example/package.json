@@ -9,8 +9,7 @@
     "author": "Philip Polkovnikov",
     "license": "MIT",
     "dependencies": {
-        "@bem-modules/bem": "0.0.3",
-        "@types/node": "14.11.8"
+        "@bem-modules/bem": "0.0.3"
     },
     "devDependencies": {
         "@babel/core": "7.14.6",
@@ -19,6 +18,7 @@
         "@bem-modules/loader": "0.0.1",
         "@bem-modules/ts-plugin": "0.0.1",
         "@types/mini-css-extract-plugin": "2.0.1",
+        "@types/node": "14.11.8",
         "babel-loader": "8.2.2",
         "css-loader": "5.2.6",
         "mini-css-extract-plugin": "2.1.0",
