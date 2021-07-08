@@ -1,6 +1,6 @@
 {
     "name": "@bem-modules/loader",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Webpack loader for BEM modules",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
@@ -28,6 +28,6 @@
         "/lib"
     ],
     "devDependencies": {
-        "@bem-modules/eslint-config": "0.0.1"
+        "@bem-modules/eslint-config": "^0.1.0"
     }
 }

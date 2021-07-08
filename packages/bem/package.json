@@ -1,6 +1,6 @@
 {
     "name": "@bem-modules/bem",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "description": "BEM class name generator",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
@@ -30,6 +30,6 @@
         "/lib"
     ],
     "devDependencies": {
-        "@bem-modules/eslint-config": "0.0.1"
+        "@bem-modules/eslint-config": "^0.1.0"
     }
 }
