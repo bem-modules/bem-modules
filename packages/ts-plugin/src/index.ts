@@ -28,7 +28,7 @@ const createLogger = (info: ts.server.PluginCreateInfo): Logger => {
     };
 };
 
-const isCss = (fileName: string) => fileName.endsWith('.css');
+const isCss = (fileName: string) => fileName.endsWith('.bem.css');
 
 const replaceField = <T, K extends keyof T>(
     value: T,

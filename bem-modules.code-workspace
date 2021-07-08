@@ -17,6 +17,9 @@
 			"path": "packages\\ts-plugin"
 		},
 		{
+			"path": "packages\\loader"
+		},
+		{
 			"name": "<root>",
 			"path": "."
 		}

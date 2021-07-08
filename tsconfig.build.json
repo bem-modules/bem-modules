@@ -12,6 +12,9 @@
         },
         {
             "path": "packages/ts-plugin"
+        },
+        {
+            "path": "packages/loader"
         }
     ]
 }
