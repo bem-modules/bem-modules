@@ -59,7 +59,7 @@
 			"tsconfig.json": true,
 		},
 		"files.autoGuessEncoding": true,
-		"typescript.tsdk": "..\\node_modules\\typescript\\lib",
+		"typescript.tsdk": "<root>\\node_modules\\typescript\\lib",
 	},
 	"extensions": {
 		"recommendations": [

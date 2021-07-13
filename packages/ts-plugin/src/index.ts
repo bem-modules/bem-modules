@@ -14,7 +14,7 @@ interface Logger {
 const createLogger = (info: ts.server.PluginCreateInfo): Logger => {
     const log = (message: string) => {
         info.project.projectService.logger.info(
-            `[typescript-plugin-css-modules] ${message}`,
+            `[@bem-modules/ts-plugin] ${message}`,
         );
     };
     const error = (error: Error) => {
@@ -61,13 +61,8 @@ const init = ({
         process.chdir(info.project.getCurrentDirectory());
 
         const logger = createLogger(info);
-        // const compilerOptions = info.project.getCompilerOptions();
 
-        // User options for plugin.
-        // const options: Options = info.config.options || {};
-        // logger.log(`options: ${JSON.stringify(options)}`);
-
-        // const processor = postcss();
+        logger.log(`@bem-modules/ts-plugin loaded`);
 
         const generateDts = (
             fileName: string,
@@ -93,6 +88,11 @@ const init = ({
             'createLanguageServiceSourceFile',
             (createLanguageServiceSourceFile) =>
                 (fileName, scriptSnapshot, ...rest): ts.SourceFile => {
+                    logger.log(
+                        JSON.stringify({
+                            createLanguageServiceSourceFile: fileName,
+                        }),
+                    );
                     if (isCss(fileName)) {
                         scriptSnapshot = generateDts(fileName, scriptSnapshot);
                     }
@@ -113,6 +113,12 @@ const init = ({
             'updateLanguageServiceSourceFile',
             (updateLanguageServiceSourceFile) =>
                 (sourceFile, scriptSnapshot, ...rest): ts.SourceFile => {
+                    logger.log(
+                        JSON.stringify({
+                            updateLanguageServiceSourceFile:
+                                sourceFile.fileName,
+                        }),
+                    );
                     if (isCss(sourceFile.fileName)) {
                         scriptSnapshot = generateDts(
                             sourceFile.fileName,
